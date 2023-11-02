@@ -1,0 +1,65 @@
+{
+  "type": "component",
+  "metadata": {},
+  "schema": {
+    "name": "paginator",
+    "friendlyName": "Paginator",
+    "description": "A paginator component",
+    "icon": "123",
+    "hasChildren": true,
+    "settings": [
+      {
+        "type": "text",
+        "key": "records",
+        "label": "Total Records",
+        "defaultValue" : "1000"
+      },
+      {
+        "type": "text",
+        "key": "pageSize",
+        "label": "Page Size",
+        "defaultValue": 25
+      },
+      {
+        "type": "text",
+        "key": "page",
+        "label": "Active Page",
+        "min": 1,
+        "defaultValue": 1
+      },
+      {
+        "type": "text",
+        "key": "pageButtons",
+        "label": "Max Buttons",
+        "min": 5,
+        "max": 30,
+        "defaultValue": 8
+      }
+    ],
+    "context": [
+      {
+        "type": "static",
+        "values": [
+          {
+            "label": "Offset",
+            "key": "offset",
+            "type": "number",
+            "defaultValue": 0
+          },
+          {
+            "label": "Limit",
+            "key": "limit",
+            "type": "number",
+            "defaultValue": 25
+          },
+          {
+            "label": "Current page",
+            "key": "currentPage",
+            "type": "number",
+            "defaultValue": 1
+          }
+        ]
+      }
+    ]
+  }
+}
