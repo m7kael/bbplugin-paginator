@@ -1,6 +1,6 @@
 {
   "name": "paginator",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A paginator component",
   "license": "MIT",
   "svelte": "index.js",

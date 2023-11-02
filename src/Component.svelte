@@ -4,6 +4,7 @@
   const { styleable, Provider } = getContext("sdk")
   const component = getContext("component")
 
+  export let onChange
   export let page
   export let pageSize
   export let pages 
@@ -52,7 +53,8 @@
       return
     }
 
-    page = item
+    page = item;
+    onChange({ value: page })
 
   }
 

@@ -34,6 +34,17 @@
         "min": 5,
         "max": 30,
         "defaultValue": 8
+      },
+      {
+        "type": "event",
+        "label": "On Change",
+        "key": "onChange",
+        "context": [
+          {
+            "label": "Field Value",
+            "key": "value"
+          }
+        ]
       }
     ],
     "context": [
