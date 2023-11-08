@@ -10,6 +10,7 @@
   export let pages 
   export let pageButtons
   export let records 
+  export let showTotal
 
   let startIndex = 1
   $: pages = Math.ceil( records / pageSize )
@@ -71,7 +72,9 @@
  
   <div class="paginator">
       <nav style:margin-top={"1rem"} class="spectrum-Pagination spectrum-Pagination--listing">
-        <div>Total: {records}</div>
+        {#if showTotal}
+          <div>Total: {records}</div>
+        {/if}
         <button 
           disabled={page == 1} 
           on:click={handlePrevious} 

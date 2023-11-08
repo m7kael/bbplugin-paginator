@@ -36,6 +36,11 @@
         "defaultValue": 8
       },
       {
+        "type": "boolean",
+        "key": "showTotal",
+        "label": "Show total value"
+      },
+      {
         "type": "event",
         "label": "On Change",
         "key": "onChange",
